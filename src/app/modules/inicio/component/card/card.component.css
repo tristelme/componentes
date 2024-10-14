@@ -1,5 +1,79 @@
-img[mat-card-image] {
-    width: 10%;
-    height: auto;
-  }
-  
+.contenido {
+  margin: 15px; /* Margen alrededor del contenedor */
+  display: flex; /* Utiliza flexbox para alinear los elementos en fila */
+  flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente línea si el espacio es insuficiente */
+  gap: 16px; /* Espacio entre tarjetas */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+}
+
+.example-card {
+  width: 300px; /* Ancho fijo para las tarjetas */
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Esconde cualquier contenido que desborde */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil de la tarjeta */
+  transition: transform 0.2s; /* Transición suave para el efecto de hover */
+}
+
+.example-card:hover {
+  transform: scale(1.02); /* Aumenta el tamaño al pasar el ratón */
+}
+
+.example-header-image {
+  width: 50px; /* Ancho de la imagen del encabezado */
+  height: 50px; /* Alto de la imagen del encabezado */
+  border-radius: 50%; /* Redondea la imagen */
+  background-size: cover; /* Ajusta la imagen para que cubra el área */
+  background-position: center; /* Centra la imagen */
+}
+
+.phone-image {
+  width: 100%; /* Ancho completo de la tarjeta */
+  height: 300px; /* Establece una altura fija para todas las imágenes */
+  object-fit: cover; /* Asegura que la imagen cubra completamente el área, manteniendo su relación de aspecto */
+  border-radius: 8px 8px 0 0; /* Bordes redondeados en la parte superior */
+}
+
+.description {
+  font-size: 14px; /* Tamaño de fuente para la descripción */
+  color: #666; /* Color para la descripción más suave */
+}
+
+.price {
+  font-weight: bold; /* Peso de la fuente en negrita */
+  color: #333; /* Color para el precio */
+}
+
+/* Estilos comunes para los botones */
+.like-button, .share-button {
+  font-weight: 500; /* Peso de fuente más ligero */
+  padding: 8px 16px; /* Relleno para mayor clicabilidad */
+  border-radius: 4px; /* Bordes redondeados */
+  font-size: 14px; /* Tamaño de la fuente */
+  border: 1px solid transparent; /* Sin borde inicialmente */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: background-color 0.3s, color 0.3s; /* Transiciones suaves para el fondo y el color */
+}
+
+/* Estilo para el botón "LIKE" */
+.like-button {
+  background-color: transparent; /* Fondo transparente */
+  color: #007bff; /* Color del texto azul */
+}
+
+/* Hover efecto para "LIKE" */
+.like-button:hover {
+  background-color: #007bff; /* Color de fondo al pasar el ratón */
+  color: white; /* Color del texto al pasar el ratón */
+}
+
+/* Estilo para el botón "SHARE" */
+.share-button {
+  background-color: transparent; /* Fondo transparente */
+  color: #28a745; /* Color del texto verde */
+}
+
+/* Hover efecto para "SHARE" */
+.share-button:hover {
+  background-color: #28a745; /* Color de fondo al pasar el ratón */
+  color: white; /* Color del texto al pasar el ratón */
+}

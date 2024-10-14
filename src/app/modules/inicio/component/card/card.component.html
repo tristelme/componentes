@@ -1,17 +1,20 @@
-<div *ngFor="let i of info" class="contenido">
-  <mat-card class="example-card" appearance="outlined">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>{{i.titulo}}</mat-card-title>
-      <mat-card-subtitle></mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="{{i.imagen}}" alt="{{i.alt}}">
-    <mat-card-content>
-      <p>{{i.descripcion}}</p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
-    </mat-card-actions>
-  </mat-card>      
+<div class="contenido">
+  <div class="card-container" *ngFor="let i of info">
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image" style="background-image: url('{{i.imagen}}');"></div>
+        <mat-card-title>{{i.titulo}}</mat-card-title>
+        <mat-card-subtitle>{{i.marca}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{i.imagen}}" alt="{{i.alt}}" class="phone-image">
+      <mat-card-content>
+        <p class="description">{{i.descripcion}}</p>
+        <p class="price">${{i.precio}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button color="primary" class="like-button">Comprar ahora</button>
+        <button mat-button color="accent" class="share-button">Agregar al carrito</button>
+      </mat-card-actions>      
+    </mat-card>
+  </div>
 </div>
