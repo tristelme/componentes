@@ -43,6 +43,33 @@ export class CardComponent {
       alt: "Google Pixel 6",
       marca: "Google",
       precio: 599
+    },
+    {
+      idCard: "4",
+      titulo: "Samsung A23 5G",
+      descripcion: "Potente procesador Snapdragon 685 | Pantalla de 6,67 | Frecuencia de actualización de 120Hz | Cámara triple de 108MP | Batería de 5000mAh | Carga Rápida.",
+      imagen: "../assets/samsunga235g.jpg",
+      alt: "Samsung A23 5G",
+      marca: "Samsung",
+      precio: 499
+    },
+    {
+      idCard: "5",
+      titulo: "Xiaomi RedmiNote 13",
+      descripcion: "Con un diseño delgado y liviano, el moto g84 5G está disponible en colores increíbles y materiales de primer nivel, incluida una versión de cuero vegano que es suave al tacto y cómoda para la mano.",
+      imagen: "../assets/xiaomiredminote12.png",
+      alt: "Xiaomi RedmiNote 13",
+      marca: "Xiaomi",
+      precio: 599
+    },
+    {
+      idCard: "6",
+      titulo: "Motorola moto G84",
+      descripcion: "Diseño sofisticado y máxima protección! Con un diseño delgado y liviano, el moto g84 5G está disponible en colores increíbles y materiales de primer nivel, incluida una versión de cuero vegano que es suave al tacto y cómoda para la mano.",
+      imagen: "../assets/motorolamotog84.png",
+      alt: "motorola moto g84",
+      marca: "Motorola",
+      precio: 599
     }
   ];
 }
