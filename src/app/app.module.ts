@@ -9,6 +9,9 @@ import { FooterComponent } from './modules/shared/footer/footer.component';
 import { IniciosesionComponent } from './modules/autenticacion/iniciosesion/iniciosesion.component';
 import { FormsModule } from '@angular/forms';
 import { RegistroComponent } from './modules/autenticacion/registro/registro.component';
+//FIREBASE -> importamos las herramientas de la base de datos
+import { enviremont } from 'src/environments/environment';
+
   @NgModule({
     declarations: [
       AppComponent,
