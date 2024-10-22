@@ -1,7 +1,7 @@
-export const enviremont = {
+export const environment = {
     production: false,
-    // Your web app's Firebase configuration
- firebaseConfig: {
+    // sacamos la palabra "const" y el ";" final, cambiamos el "=" por ":"
+    firebaseConfig: {
     apiKey: "AIzaSyBltuKAfDGPm6CbVk48CtxlyKhbQ_WzQAg",
     authDomain: "phone2-a8947.firebaseapp.com",
     projectId: "phone2-a8947",

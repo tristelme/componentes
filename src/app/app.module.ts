@@ -9,8 +9,11 @@ import { FooterComponent } from './modules/shared/footer/footer.component';
 import { IniciosesionComponent } from './modules/autenticacion/iniciosesion/iniciosesion.component';
 import { FormsModule } from '@angular/forms';
 import { RegistroComponent } from './modules/autenticacion/registro/registro.component';
-//FIREBASE -> importamos las herramientas de la base de datos
-import { enviremont } from 'src/environments/environment';
+// FIREBASE -> importamos HERRAMIENTAS de la Base de Datos
+import { environment } from 'src/environments/environment'; // vincula a la BD con la APP
+import { AngularFireModule } from '@angular/fire/compat'; // trabaja con las colecciones de información
+import { AngularFireAuthModule } from '@angular/fire/compat/auth'; // trabaja con la autentificación
+import { AngularFireStorageModule } from '@angular/fire/compat/storage'; // trabaja con imágenes y archivos
 
   @NgModule({
     declarations: [
@@ -25,7 +28,10 @@ import { enviremont } from 'src/environments/environment';
       AppRoutingModule,
       MatCardModule,
       BrowserAnimationsModule,
-      FormsModule
+      FormsModule,
+      AngularFireModule.initializeApp(environment.firebaseConfig), // Inicializar Firebase dentro del proyecto
+      AngularFireAuthModule,
+      AngularFireStorageModule
     ],
     providers: [],
     bootstrap: [AppComponent]
